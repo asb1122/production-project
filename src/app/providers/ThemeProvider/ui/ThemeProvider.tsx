@@ -1,4 +1,4 @@
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from './ThemeContext';
+import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContext';
 import { FunctionComponent, useMemo, useState } from 'react';
 
 const ThemeProvider: FunctionComponent = ({children}) => {
