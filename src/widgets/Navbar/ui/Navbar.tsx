@@ -1,27 +1,27 @@
 import { classNames } from "shared/lib/classNames";
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { ThemeSwitcher } from "shared/ui/ThemeSwitcher/ThemeSwitcher";
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
     className?: string;
 }
 
-export const Navbar = ({className}: NavbarProps) => {
+export const Navbar = ({className}: NavbarProps) => {    
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
-            <ThemeSwitcher className={classNames(cls.ThemeSwitcher, {}, [className])}/>
             <div className={cls.links}>
                 <AppLink
                     theme={AppLinkTheme.SECONDARY}
                     to={'/'} 
                     className={cls.mainLink}
-                >Главная
+                    >
+                        Главная
                 </AppLink>
                 <AppLink
                     theme={AppLinkTheme.SECONDARY}
                     to={'/about'}
-                    >О сайте
+                    >
+                        О сайте
                 </AppLink>
             </div>
         </div>
