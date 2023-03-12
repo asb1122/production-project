@@ -1,5 +1,3 @@
-const { default: i18next } = require("i18next");
-
 module.exports = {
     "env": {
         "browser": true,
