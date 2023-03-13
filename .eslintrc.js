@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
@@ -26,7 +27,10 @@ module.exports = {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         'indent': [2, 4],
-        'react/jsx-filename-extension': [2, { extensions: ['.js', 'ts', '.jsx', '.tsx'] }],
+        'react/jsx-filename-extension': [
+            2, 
+            { extensions: ['.js', 'ts', '.jsx', '.tsx'] }
+        ],
         'import/no-unresolve': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'warn',
@@ -40,6 +44,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-undef': 'off',
         'i18next/no-literal-string': ['error', {markupOnly: true}],
+        'max-len': ['error', { ignoreComments: true, code: 100 }]
     },
 
     "globals": {
