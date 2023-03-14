@@ -1,3 +1,4 @@
+import { BugButton } from "app/providers/ErrorBoundary";
 import { t } from "i18next";
 import React from "react";
 import { classNames } from "shared/lib/classNames/classNames";
@@ -26,6 +27,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                 >  
                     {t("О сайте")}
                 </AppLink>
+                { __IS_DEV__ && <BugButton/>}
             </div>
         </div>
     );
